@@ -1,10 +1,21 @@
 import React from 'react';
-import { render } from 'react-dom'
+import { render } from 'react-dom';
 
-function App() {
+const App () => {
   return (
-    React.createElement("div", {}, React.createElement("h1", {}, "hello Universe!"));
-  )
+    React.createElement(
+      "div",
+      {},
+      React.createElement(
+        "h1",
+        {},
+        "Hello Universe"
+      )
+    )
+  );
 };
 
-render(React.createElement(App), document.getElementById("root"))
+render(
+  React.createElement(App),
+  document.getElementById("root")
+)
