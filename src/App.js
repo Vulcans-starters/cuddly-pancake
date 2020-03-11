@@ -1,7 +1,10 @@
-const App = () => {
+import React from 'react';
+import { render } from 'react-dom'
+
+function App() {
   return (
     React.createElement("div", {}, React.createElement("h1", {}, "hello Universe!"));
   )
 };
 
-ReactDOM.render(React.createElement(App), document.getElementById("root"))
+render(React.createElement(App), document.getElementById("root"))
